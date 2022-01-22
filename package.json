@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx nodemon",
     "prod": "npm run migration && npm run start",
-    "start": "clear && node src/index.js",
+    "start": "node src/index.js",
     "prettier": "npx prettier --check src",
     "prettier:fix": "npx prettier src --write",
     "lint": "npx eslint src",
