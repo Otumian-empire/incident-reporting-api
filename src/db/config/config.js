@@ -34,6 +34,9 @@ module.exports = {
     database: PROD_DB_NAME,
     host: PROD_DB_HOST,
     port: PROD_DB_PORT,
-    dialect: DIALECT
+    dialect: DIALECT,
+    ssl: {
+      rejectUnauthorized: false,
+    }
   }
 };
