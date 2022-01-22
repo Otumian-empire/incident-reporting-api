@@ -4,6 +4,11 @@ const {
   DEV_DB_PASSWORD,
   DEV_DB_USERNAME,
   DEV_DB_PORT,
+  PROD_DB_HOST,
+  PROD_DB_NAME,
+  PROD_DB_PASSWORD,
+  PROD_DB_USERNAME,
+  PROD_DB_PORT,
   DIALECT
 } = require("../../config/db_constants");
 
@@ -24,10 +29,11 @@ module.exports = {
     dialect: DIALECT
   },
   production: {
-    username: "root",
-    password: null,
-    database: "database_production",
-    host: "127.0.0.1",
+    username: PROD_DB_USERNAME,
+    password: PROD_DB_PASSWORD,
+    database: PROD_DB_NAME,
+    host: PROD_DB_HOST,
+    port: PROD_DB_PORT,
     dialect: DIALECT
   }
 };
